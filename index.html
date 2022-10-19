@@ -6,63 +6,48 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>BOOKS</title>
+    <title>Books</title>
 </head>
 <body>
 <h1>Add Books</h1>
 
-
 <div class="row">
-    <form class="col s12" id="task-form">
+    <form class="col s12" id="book-form">
         <div class="row">
             <div class="input-field col s12">
-                <input type="text" id="task">
-                <label for="task">Title</label>
+                <input type="text" id="title">
+                <label for="title">Title</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input type="text" id="autor">
-                <label for="autor">Autor</label>
+                <input type="text" id="author">
+                <label for="author">Author</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input type="text" id="isbn">
+                <input type="number" id="isbn">
                 <label for="isbn">ISBN#</label>
             </div>
         </div>
         <div class="row">
             <div class="col s12">
-                <a href="#" class="btn" id="submit" style="width: 20%">Submit</a>
+                <input type="submit" class="btn">
             </div>
         </div>
     </form>
     <div class="row">
-        <table>
+        <table id="bookTable">
             <tr>
                 <th>Title</th>
                 <th>Author</th>
                 <th>ISBN</th>
             </tr>
-            <tr>
-                <td>Tõde ja Õigus</td>
-                <td>A.H.Tammsaare</td>
-                <td>123789</td>
-                <td><a href="#" id="del">X</a></td>
-            </tr>
-            <tr>
-                <td>Naksitrallid</td>
-                <td>Eno Raud</td>
-                <td>123788</td>
-                <td><a href="#" id="delete">X</a></td>
-            </tr>
         </table>
     </div>
 </div>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="app.js"></script>
+<script src="books.js"></script>
 </body>
 </html>
